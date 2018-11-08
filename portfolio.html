@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-    <script src="semantic/dist/semantic.min.js"></script>
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
     <title>Welcome to Alex's Portfolio!</title>
 </head>
 <body>
@@ -11,14 +11,14 @@
         <div class="ui three wide stretched column center aligned" >
             <div class="ui left fluid inverted vertical menu sticky">
                 <div id="menu-items">
-                <img src="/images/modifiedHeadShot.png" class="ui small circular image" style="display:inline; padding-top: 5px" >
+                <img src="/Images/modifiedHeadShot.png" class="ui small circular image" style="display:inline; padding-top: 5px" >
                 <p style="color:white">Alexander Bonilla<br>
                 <a href="mailto:alexbonilla217@gmail.com" target="_top" style="color:white;text-align:center">
                     alexbonilla217@gmail.com
                 </a>
             </p>
-                <a href="https://github.com/abonilla95" target="_blank"><img src="/images/GitHub-Mark-light-32px.png" ></a>
-                <a href="https://www.linkedin.com/in/alexander-bonilla-40202492/" target="_blank"><img src="/images/In-2C-34px-TM.png"></a>
+                <a href="https://github.com/abonilla95" target="_blank"><img src="/Images/GitHub-Mark-Light-32px.png" ></a>
+                <a href="https://www.linkedin.com/in/alexander-bonilla-40202492/" target="_blank"><img src="/Images/In-2C-34px-TM.png"></a>
                 <a class="item" id="biography" onclick="runAboutMe();">
                     About Me
                     </a>
@@ -100,8 +100,7 @@
 
                 Must you with him from him her were more. In eldest be it result should remark vanity square. Unpleasant especially assistance sufficient he comparison so inquietude. Branch one shy edward stairs turned has law wonder horses. Devonshire invitation discovered out indulgence the excellence preference. Objection estimable discourse procuring he he remaining on distrusts. Simplicity affronting inquietude for now sympathize age. She meant new their sex could defer child. An lose at quit to life do dull. </p>
             </p>
-            <!-- <button class="ui fluid button" onclick="" id='apartmentFinderButton'>Craigslist Apartment Finder</button> -->
-                <div class="ui styled fluid accordion">
+              <div class="ui styled fluid accordion">
                     <div class="active title">
                         <i class="dropdown icon"></i>
                         Craigslist Apartment Finder
@@ -159,7 +158,11 @@
                 }, 800);
         };
 
-        $('.ui.accordion').accordion();
+    $( ".ui.accordion" ).accordion({
+        autoHeight: false, 
+        collapsible: true,
+        exclusive:false
+    });
     </script>
 </body>
 </html>
