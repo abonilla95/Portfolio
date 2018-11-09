@@ -4,19 +4,16 @@
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="semantic/dist/semantic.min.js"></script>
     <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <script src="portfolioScript.js"></script>
     <title>Welcome to Alex's Portfolio!</title>
 </head>
 <body>
     <div class="ui grid">
-        <div class="ui three wide stretched column center aligned" >
+        <div class="ui three wide stretched column center aligned">
             <div class="ui left fluid inverted vertical menu sticky">
                 <div id="menu-items">
                 <img src="/Images/modifiedHeadShot.png" class="ui small circular image" style="display:inline; padding-top: 5px" >
                 <h3 style="color:white">Alexander Bonilla<br></h3>
-                <!-- <a href="mailto:alexbonilla217@gmail.com" target="_top" style="color:white;text-align:center">
-                    alexbonilla217@gmail.com
-                </a> -->
-            <!-- </p> -->
                 <a href="https://github.com/abonilla95" target="_blank"><img src="/Images/GitHub-Mark-Light-32px.png" ></a>
                 <a href="https://www.linkedin.com/in/alexander-bonilla-40202492/" target="_blank"><img src="/Images/In-2C-34px-TM.png"></a>
                 <a class="item" id="biography" onclick="runAboutMe();">
@@ -34,8 +31,9 @@
             </div></div>
         </div>
         <div class="ui thirteen wide column" id='pageContent'>
+            <br>
             <div class="aboutMe">
-                <h2>About Me</h2>
+                <h1 class="ui centered header">About Me</h1>
                  <p>
                     Rendered her for put improved concerns his. Ladies bed wisdom theirs mrs men months set. Everything so dispatched as it increasing pianoforte. Hearing now saw perhaps minutes herself his. Of instantly excellent therefore difficult he northward. Joy green but least marry rapid quiet but. Way devonshire introduced expression saw travelling affronting. Her and effects affixed pretend account ten natural. Need eat week even yet that. Incommode delighted he resolving sportsmen do in listening.
 
@@ -61,7 +59,7 @@
                 </p>
             </div>
            <div class="AboutThisSite">
-               <h2>This Site</h2>
+               <h1 class="ui centered header">This Site</h1>
                 <p>
                     Rendered her for put improved concerns his. Ladies bed wisdom theirs mrs men months set. Everything so dispatched as it increasing pianoforte. Hearing now saw perhaps minutes herself his. Of instantly excellent therefore difficult he northward. Joy green but least marry rapid quiet but. Way devonshire introduced expression saw travelling affronting. Her and effects affixed pretend account ten natural. Need eat week even yet that. Incommode delighted he resolving sportsmen do in listening.
 
@@ -95,7 +93,7 @@
 
             </p>
             <div class="AboutMyProjects">
-                <h1>My Projects</h1>
+                <h1 class="ui centered header">My Projects</h1>
             <p>
                 Brother set had private his letters observe outward resolve. Shutters ye marriage to throwing we as. Effect in if agreed he wished wanted admire expect. Or shortly visitor is comfort placing to cheered do. Few hills tears are weeks saw. Partiality insensible celebrated is in. Am offended as wandered thoughts greatest an friendly. Evening covered in he exposed fertile to. Horses seeing at played plenty nature to expect we. Young say led stood hills own thing get.
 
@@ -211,70 +209,14 @@
             background-image: url("Images/photo-1521540333410-bbd58042e2b4.jpeg")
         }
     </style>
-
     <script>
-        function runAboutMe() {
-            $('html, body').animate({
-                    scrollTop: $(".aboutMe").offset().top
-                }, 800);
-            };
-        function scrollToAboutThisSite() {
-            $('html, body').animate({
-                    scrollTop: $(".AboutThisSite").offset().top
-                }, 800);
-            };
-        function scrollToMyProjects() {
-            $('html, body').animate({
-                    scrollTop: $(".AboutMyProjects").offset().top
-                }, 800);
-        };
-        function scrolltoApartment() {
-            $('html, body').animate({
-                 scrollTop: $("#apartmentTitle").offset().top
-                 }, 800);
-            if($('#apartmentCloseButton').length == 0){
-                $('#projectsGrid').append("<div class='row' id='apartmentCloseButton' onclick='removeApartment();'> <button class='ui  labeled icon button fluid' style='background:none;border:none;margin:0;padding:0;cursor:pointer;color:whitesmoke'><i class='ui close icon' style='color:steelblue'></i>Craigslist Apartment Finder</button></div>")
-            }
-            else{
-                $('#apartmentCloseButton').remove()
-            }
-        }
-
-        function scrollToRaspberry(){
-            $('html, body').animate({
-                 scrollTop: $("#raspberryTitle").offset().top
-                 }, 800);
-            if($('#raspberryCloseButton').length == 0){
-                $('#projectsGrid').append("<div class='row' id='raspberryCloseButton' onclick='removeRaspberry();' > <button class='ui  labeled icon button fluid' style='background:none;border:none;margin:0;padding:0;cursor:pointer;color:whitesmoke'><i class='ui close icon' style='color:steelblue'></i>raspberry</button></div>")
-            }
-            else{
-                $('#raspberryCloseButton').remove()
-            }
-        }
-        function removeRaspberry() {
-            $('#raspberryCloseButton').remove()
-            $('#raspberryTitle').removeClass('active');
-            $('#raspberryContent').animate({height:'toggle'},1000,function () {$('#raspberryContent').removeClass('active')})
-            $('html, body').animate({
-                 scrollTop: $("#raspberryTitle").offset().top
-                 }, 800);
-        }
-        function removeApartment(){
-            $('#apartmentCloseButton').remove()
-            $('#apartmentTitle').removeClass('active');
-            $('#apartmentContent').animate({height:'toggle'},1000, function (){$('#apartmentContent').removeClass('active')});
-            $('html, body').animate({
-                 scrollTop: $("#apartmentTitle").offset().top
-                 }, 800);
-        }
-
-
-    $( ".ui.accordion" ).accordion({
-        autoHeight: false,
-        active:false, 
-        collapsible: true,
-        exclusive:false
-    })
-    </script>
+        $( ".ui.accordion" ).accordion({
+            autoHeight: false,
+            active:false, 
+            collapsible: true,
+            exclusive:false
+        })
+            </script>
+  
 </body>
 </html>
