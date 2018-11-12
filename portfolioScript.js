@@ -3,9 +3,9 @@ function runAboutMe() {
             scrollTop: $(".aboutMe").offset().top
         }, 800);
     };
-function scrollToAboutThisSite() {
+function scrollToEarlyLife() {
     $('html, body').animate({
-            scrollTop: $(".AboutThisSite").offset().top
+            scrollTop: $(".EarlyLife").offset().top
         }, 800);
     };
 function scrollToMyProjects() {
