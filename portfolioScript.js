@@ -3,11 +3,11 @@ function runAboutMe() {
             scrollTop: $(".aboutMe").offset().top
         }, 800);
     };
-function scrollToEarlyLife() {
-    $('html, body').animate({
-            scrollTop: $(".EarlyLife").offset().top
-        }, 800);
-    };
+// function scrollToEarlyLife() {
+//     $('html, body').animate({
+//             scrollTop: $(".EarlyLife").offset().top
+//         }, 800);
+//     };
 function scrollToMyProjects() {
     $('html, body').animate({
             scrollTop: $(".AboutMyProjects").offset().top
@@ -23,7 +23,8 @@ function scrolltoApartment() {
     else{
         $('#apartmentCloseButton').remove()
     }
-}
+};
+
 
 function scrollToRaspberry(){
     $('html, body').animate({
