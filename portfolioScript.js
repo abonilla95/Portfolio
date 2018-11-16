@@ -18,7 +18,7 @@ function scrolltoApartment() {
          scrollTop: $("#apartmentTitle").offset().top
          }, 800);
     if($('#apartmentCloseButton').length == 0){
-        $('#projectsGrid').append("<div class='row' id='apartmentCloseButton' onclick='removeApartment();'> <button class='ui  labeled icon button fluid' style='background:none;border:none;margin:0;padding:0;cursor:pointer;color:whitesmoke'><i class='ui close icon' style='color:steelblue;padding-left:5px'></i>Craigslist Apartment Finder</button></div>")
+        $('#projectsGrid').append("<div class='row' id='apartmentCloseButton' onclick='removeApartment();'> <button class='ui  labeled icon button fluid' style='background:none;border:none;margin:0;padding:0;cursor:pointer;color:whitesmoke'><i class='ui close icon' style='color:steelblue;padding-left:5px'></i>Apartment Finder</button></div>")
     }
     else{
         $('#apartmentCloseButton').remove()
@@ -31,7 +31,7 @@ function scrollToRaspberry(){
          scrollTop: $("#raspberryTitle").offset().top
          }, 800);
     if($('#raspberryCloseButton').length == 0){
-        $('#projectsGrid').append("<div class='row' id='raspberryCloseButton'  onclick='removeRaspberry();' > <button class='ui  labeled icon button fluid' style='background:none;border:none;margin:0;padding:0;cursor:pointer;color:whitesmoke'><i class='ui close icon' style='color:steelblue;padding-left:5px'></i>raspberry</button></div>")
+        $('#projectsGrid').append("<div class='row' id='raspberryCloseButton'  onclick='removeRaspberry();' > <button class='ui  labeled icon button fluid' style='background:none;border:none;margin:0;padding:0;cursor:pointer;color:whitesmoke'><i class='ui close icon' style='color:steelblue;padding-left:5px'></i>About This Website</button></div>")
     }
     else{
         $('#raspberryCloseButton').remove() 
